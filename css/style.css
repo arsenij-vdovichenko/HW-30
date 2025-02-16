@@ -1,0 +1,43 @@
+.container{
+    width: 100%;
+    height: 1000px;
+    background-color: red;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: move-box;
+    animation-duration: 2000ms;
+    animation-delay: 3000ms;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    animation-iteration-count: infinite;
+    animation-duration: altarnate;
+    position: absolute;
+
+}
+
+
+@keyframes move-box{
+    0%{
+        background-color: blue;
+        transform: translate(0, 0);
+    }
+    25%{
+        background-color: pink;
+        transform: translate(0, 500px);
+    }
+    50%{
+        transform: translate(500px, 500px);
+    }
+    75%{
+        background-color: tomato;
+        transform: translate(500px, 0);
+    }
+    100%{
+        background-color: blueviolet;
+        transform: translate(0, 0);
+    }
+    
+}
